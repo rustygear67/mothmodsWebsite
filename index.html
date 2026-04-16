@@ -10,8 +10,116 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Under Construction Banner */
+			#construction-banner {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				background: #f0a500;
+				color: #1a1a1a;
+				text-align: center;
+				padding: 10px 20px;
+				font-size: 0.9em;
+				font-weight: bold;
+				z-index: 9999;
+				letter-spacing: 0.05em;
+				box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+			}
+			#construction-banner span {
+				margin: 0 8px;
+				font-size: 1.1em;
+			}
+
+			/* Push page content down so banner doesn't overlap */
+			body {
+				padding-top: 38px;
+			}
+
+			/* Coming Soon section */
+			.coming-soon-grid {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 1.5em;
+				justify-content: center;
+				margin-top: 2em;
+			}
+			.coming-soon-card {
+				background: #2a2a2a;
+				border: 1px solid #3a3a3a;
+				border-radius: 8px;
+				width: 260px;
+				padding: 2em 1.5em;
+				text-align: center;
+				color: #aaa;
+			}
+			.coming-soon-card .icon-wrap {
+				font-size: 2.5em;
+				margin-bottom: 0.5em;
+				color: #555;
+			}
+			.coming-soon-card h3 {
+				color: #ccc;
+				margin-bottom: 0.5em;
+				font-size: 1em;
+			}
+			.coming-soon-card p {
+				font-size: 0.85em;
+				color: #666;
+				margin: 0;
+			}
+			.coming-soon-badge {
+				display: inline-block;
+				margin-top: 2em;
+				background: #333;
+				color: #888;
+				border: 1px dashed #555;
+				border-radius: 20px;
+				padding: 0.4em 1.2em;
+				font-size: 0.85em;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+			}
+
+			/* Policy section */
+			.policy-block {
+				margin-top: 3em;
+				padding-top: 2em;
+				border-top: 1px solid #333;
+				font-size: 0.9em;
+				color: #888;
+				text-align: left;
+			}
+			.policy-block h4 {
+				color: #aaa;
+				margin-bottom: 0.5em;
+			}
+			.policy-block p {
+				margin-bottom: 1.2em;
+				line-height: 1.7em;
+			}
+
+			/* Contact list */
+			.contact-list {
+				list-style: none;
+				padding: 0;
+				font-size: 1.1em;
+				line-height: 2.4em;
+				text-align: left;
+				display: inline-block;
+			}
+			.contact-list li a {
+				color: #ccc;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
+
+		<!-- Under Construction Banner -->
+		<div id="construction-banner">
+			<span>🚧</span> This website is currently under construction — thanks for your patience! <span>🚧</span>
+		</div>
 
 		<!-- Header -->
 		<div id="header">
@@ -20,7 +128,6 @@
 
 				<!-- Logo -->
 				<div id="logo">
-					<span class="image avatar48"><img src="images/avatar.jpg" alt="Moth Mods LLC Logo" /></span>
 					<h1 id="title">Moth Mods LLC</h1>
 					<p>Technical Services & Consultation</p>
 				</div>
@@ -38,12 +145,9 @@
 			</div>
 
 			<div class="bottom">
-
-				<!-- Social Icons — update or remove as needed -->
 				<ul class="icons">
 					<li><a href="mailto:contact@unstuckbytim.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 				</ul>
-
 			</div>
 
 		</div>
@@ -54,17 +158,14 @@
 			<!-- Intro -->
 			<section id="top" class="one dark cover">
 				<div class="container">
-
 					<header>
 						<h2 class="alt">Moth Mods LLC</h2>
 						<p>Professional technical services for Jefferson County & Gilpin County, CO.<br />
 						Consultation, labor, project evaluation, and more — we get it done.</p>
 					</header>
-
 					<footer>
 						<a href="#services" class="button scrolly">See Our Services</a>
 					</footer>
-
 				</div>
 			</section>
 
@@ -129,46 +230,36 @@
 				</div>
 			</section>
 
-			<!-- Projects -->
+			<!-- Projects — Coming Soon -->
 			<section id="projects" class="three">
 				<div class="container">
 
 					<header>
 						<h2>Projects</h2>
-						<p>A look at some of our recent work. More photos coming soon.</p>
+						<p>We're currently compiling photos and write-ups from recent work.<br />Check back soon to see examples of what Moth Mods LLC can do.</p>
 					</header>
 
-					<div class="row">
-						<div class="col-4 col-12-mobile">
-							<article class="item">
-								<a href="images/project1.jpg" class="image fit"><img src="images/project1.jpg" alt="Project 1" /></a>
-								<header>
-									<h3>Project Title Here</h3>
-									<p>Brief description of this project.</p>
-								</header>
-							</article>
+					<div class="coming-soon-grid">
+						<div class="coming-soon-card">
+							<div class="icon-wrap">📷</div>
+							<h3>Project Photos</h3>
+							<p>Before & after shots from recent jobs coming soon.</p>
 						</div>
-						<div class="col-4 col-12-mobile">
-							<article class="item">
-								<a href="images/project2.jpg" class="image fit"><img src="images/project2.jpg" alt="Project 2" /></a>
-								<header>
-									<h3>Project Title Here</h3>
-									<p>Brief description of this project.</p>
-								</header>
-							</article>
+						<div class="coming-soon-card">
+							<div class="icon-wrap">📋</div>
+							<h3>Project Write-ups</h3>
+							<p>Detailed breakdowns of challenges tackled and solutions delivered.</p>
 						</div>
-						<div class="col-4 col-12-mobile">
-							<article class="item">
-								<a href="images/project3.jpg" class="image fit"><img src="images/project3.jpg" alt="Project 3" /></a>
-								<header>
-									<h3>Project Title Here</h3>
-									<p>Brief description of this project.</p>
-								</header>
-							</article>
+						<div class="coming-soon-card">
+							<div class="icon-wrap">⭐</div>
+							<h3>Client Highlights</h3>
+							<p>Showcasing successful outcomes and happy customers.</p>
 						</div>
 					</div>
 
-					<p style="margin-top:2em;"><em>Don't have project photos ready? That's fine — you can remove this section temporarily and add it back later. Stripe doesn't require a portfolio.</em></p>
+					<div>
+						<span class="coming-soon-badge">Content Coming Soon</span>
+					</div>
 
 				</div>
 			</section>
@@ -183,15 +274,14 @@
 
 					<p>Ready to talk about your project? Reach out and we'll get back to you promptly.</p>
 
-					<ul style="list-style:none; padding:0; font-size:1.1em; line-height:2.2em;">
+					<ul class="contact-list">
 						<li><span class="icon solid fa-envelope"></span> &nbsp;<a href="mailto:contact@unstuckbytim.com">contact@unstuckbytim.com</a></li>
 						<li><span class="icon solid fa-phone"></span> &nbsp;<a href="tel:+1XXXXXXXXXX">XXX-XXX-XXXX</a></li>
 						<li><span class="icon solid fa-map-marker-alt"></span> &nbsp;Serving Jefferson County & Gilpin County, CO</li>
 					</ul>
 
-					<!-- Policies — required by Stripe -->
-					<div style="margin-top:3em; padding-top:2em; border-top:1px solid #ddd; font-size:0.9em; color:#888;">
-						<h4 style="color:#aaa;">Policies</h4>
+					<div class="policy-block">
+						<h4>Policies</h4>
 						<p><strong>Refund & Dispute Policy:</strong> All services are quoted and agreed upon before work begins. If you are unsatisfied with completed work, please contact us within 7 days of project completion and we will work with you to resolve the issue. Refunds are evaluated on a case-by-case basis.</p>
 						<p><strong>Cancellation Policy:</strong> Appointments and scheduled work may be cancelled or rescheduled with at least 24 hours notice at no charge. Cancellations with less than 24 hours notice may be subject to a fee equal to the cost of the scheduled time.</p>
 					</div>
