@@ -7,82 +7,11 @@
 <html>
 	<head>
 		<title>Moth Mods LLC</title>
-		<link rel="icon" type="image/png" href="images/croppedMothModsLogoTransparent.png">
+		<link rel="icon" type="image/png" href="images/MothModsLogoTransparent.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-			/* Under Construction Banner */
-			#construction-banner {
-				position: fixed;
-				top: 0;
-				left: 0;
-				width: 100%;
-				background: #f0a500;
-				color: #1a1a1a;
-				text-align: center;
-				padding: 10px 20px;
-				font-size: 0.9em;
-				font-weight: bold;
-				z-index: 9999;
-				letter-spacing: 0.05em;
-				box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-			}
-			#construction-banner span {
-				margin: 0 8px;
-				font-size: 1.1em;
-			}
-
-			/* Push page content down so banner doesn't overlap */
-			body {
-				padding-top: 38px;
-			}
-
-			/* Coming Soon section */
-			.coming-soon-grid {
-				display: flex;
-				flex-wrap: wrap;
-				gap: 1.5em;
-				justify-content: center;
-				margin-top: 2em;
-			}
-			.coming-soon-card {
-				background: #2a2a2a;
-				border: 1px solid #3a3a3a;
-				border-radius: 8px;
-				width: 260px;
-				padding: 2em 1.5em;
-				text-align: center;
-				color: #aaa;
-			}
-			.coming-soon-card .icon-wrap {
-				font-size: 2.5em;
-				margin-bottom: 0.5em;
-				color: #555;
-			}
-			.coming-soon-card h3 {
-				color: #ccc;
-				margin-bottom: 0.5em;
-				font-size: 1em;
-			}
-			.coming-soon-card p {
-				font-size: 0.85em;
-				color: #666;
-				margin: 0;
-			}
-			.coming-soon-badge {
-				display: inline-block;
-				margin-top: 2em;
-				background: #333;
-				color: #888;
-				border: 1px dashed #555;
-				border-radius: 20px;
-				padding: 0.4em 1.2em;
-				font-size: 0.85em;
-				letter-spacing: 0.08em;
-				text-transform: uppercase;
-			}
-
 			/* Policy section */
 			.policy-block {
 				margin-top: 3em;
@@ -113,14 +42,42 @@
 			.contact-list li a {
 				color: #ccc;
 			}
+
+			/* Project gallery lightbox-style links */
+			.project-gallery {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.6em;
+				margin-top: 0.8em;
+				justify-content: center;
+			}
+			.project-gallery a img {
+				width: 80px;
+				height: 60px;
+				object-fit: cover;
+				border-radius: 4px;
+				opacity: 0.8;
+				transition: opacity 0.2s;
+			}
+			.project-gallery a img:hover {
+				opacity: 1;
+			}
+
+			/* About section */
+			.about-content {
+				max-width: 700px;
+				margin: 2em auto 0;
+				text-align: left;
+				line-height: 1.8em;
+				color: #ccc;
+				font-size: 1em;
+			}
+			.about-content p {
+				margin-bottom: 1.2em;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
-
-		<!-- Under Construction Banner -->
-		<div id="construction-banner">
-			<span>🚧</span> This website is currently under construction — thanks for your patience! <span>🚧</span>
-		</div>
 
 		<!-- Header -->
 		<div id="header">
@@ -129,6 +86,7 @@
 
 				<!-- Logo -->
 				<div id="logo">
+					<span class="image avatar48"><img src="images/MothModsLogoTransparent.png" alt="Moth Mods LLC Logo" /></span>
 					<h1 id="title">Moth Mods LLC</h1>
 					<p>Technical Services & Consultation</p>
 				</div>
@@ -137,6 +95,7 @@
 				<nav id="nav">
 					<ul>
 						<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+						<li><a href="#about" id="about-link"><span class="icon solid fa-user">About</span></a></li>
 						<li><a href="#services" id="services-link"><span class="icon solid fa-tools">Services</span></a></li>
 						<li><a href="#projects" id="projects-link"><span class="icon solid fa-images">Projects</span></a></li>
 						<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
@@ -165,19 +124,42 @@
 						Consultation, labor, project evaluation, and more — we get it done.</p>
 					</header>
 					<footer>
-						<a href="#services" class="button scrolly">See Our Services</a>
+						<a href="#about" class="button scrolly">Learn More</a>
 					</footer>
 				</div>
 			</section>
 
+			<!-- About -->
+			<section id="about" class="two">
+				<div class="container">
+
+					<header>
+						<h2>About Moth Mods</h2>
+					</header>
+
+					<div class="about-content">
+						<!-- 
+							PLACEHOLDER — replace the paragraph below with your own words.
+							A few things worth covering:
+							- Who is Tim / what's your background?
+							- What kinds of projects do you love working on?
+							- What makes Moth Mods different from a typical shop or contractor?
+							- Your philosophy or approach to work
+						-->
+						<p><em>[Your about text goes here. Tell people who you are, what drives your work, and why clients trust you to get their stuck projects moving again.]</em></p>
+					</div>
+
+				</div>
+			</section>
+
 			<!-- Services -->
-			<section id="services" class="two">
+			<section id="services" class="three">
 				<div class="container">
 
 					<header>
 						<h2>Our Services</h2>
 						<p>Moth Mods LLC provides hands-on technical expertise across a range of project types.<br />
-						Examples Project topics: Off-grid battery and photovoltaic arrays, small living space construction and maintenance, vintage vehicle repair and troubleshooting, small motor repair, automotive troubleshooting and repair, automotive accessory installation, etc.</p>
+						Examples: Off-grid battery and photovoltaic arrays, small living space construction and maintenance, vintage vehicle repair and troubleshooting, small motor repair, automotive troubleshooting and repair, automotive accessory installation, and more.</p>
 					</header>
 
 					<div class="row">
@@ -231,42 +213,75 @@
 				</div>
 			</section>
 
-			<!-- Projects — Coming Soon -->
-			<section id="projects" class="three">
+			<!-- Projects -->
+			<section id="projects" class="four">
 				<div class="container">
 
 					<header>
 						<h2>Projects</h2>
-						<p>We're currently compiling photos and write-ups from recent work.<br />Check back soon to see examples of what Moth Mods LLC can do.</p>
+						<p>A look at some of the work Moth Mods LLC has taken on — from long-dormant classics to trail-ready daily drivers.</p>
 					</header>
 
-					<div class="coming-soon-grid">
-						<div class="coming-soon-card">
-							<div class="icon-wrap">📷</div>
-							<h3>Project Photos</h3>
-							<p>Before & after shots from recent jobs coming soon.</p>
-						</div>
-						<div class="coming-soon-card">
-							<div class="icon-wrap">📋</div>
-							<h3>Project Write-ups</h3>
-							<p>Detailed breakdowns of challenges tackled and solutions delivered.</p>
-						</div>
-						<div class="coming-soon-card">
-							<div class="icon-wrap">⭐</div>
-							<h3>Client Highlights</h3>
-							<p>Showcasing successful outcomes and happy customers.</p>
-						</div>
-					</div>
+					<div class="row">
 
-					<div>
-						<span class="coming-soon-badge">Content Coming Soon</span>
+						<!-- Project 1: 1939 Olds -->
+						<div class="col-4 col-12-mobile">
+							<article class="item">
+								<a href="images/1939_Olds/IMG_8707.jpg" class="image fit">
+									<img src="images/1939_Olds/IMG_8707.jpg" alt="1939 Oldsmobile Revival" />
+								</a>
+								<header>
+									<h3>1939 Oldsmobile — Project Revival</h3>
+									<p>This Olds hadn't run since 1978. After a multi-day revival and continued sustaining work, it now runs, drives, and stops. This was the owner's dream since he last drove it to prom in '78 — 46 years of being stuck, finally unstuck.</p>
+								</header>
+								<div class="project-gallery">
+									<a href="images/1939_Olds/IMG_8724.jpg"><img src="images/1939_Olds/IMG_8724.jpg" alt="1939 Olds detail" /></a>
+									<a href="images/1939_Olds/IMG_8725.jpg"><img src="images/1939_Olds/IMG_8725.jpg" alt="1939 Olds detail" /></a>
+								</div>
+							</article>
+						</div>
+
+						<!-- Project 2: Gene the Jeepster -->
+						<div class="col-4 col-12-mobile">
+							<article class="item">
+								<a href="images/GeneTheJeepster/jeepsterSunset.jpg" class="image fit">
+									<img src="images/GeneTheJeepster/jeepsterSunset.jpg" alt="Gene the Jeepster at sunset" />
+								</a>
+								<header>
+									<h3>Gene the Jeepster — Maintenance & Upgrades</h3>
+									<p>Tim's personal 1967 Jeepster Commando. Years of maintenance and upgrades keep this classic on the road. In fall 2025, Gene successfully drove 2,000+ miles from Colorado to Montana for mountain fly fishing and dirt road cruising — running the original Dauntless 225 oddfire V6 with an HEI upgrade and rebuilt Rochester 2-barrel.</p>
+								</header>
+								<div class="project-gallery">
+									<a href="images/GeneTheJeepster/jeepsterInCentralCity.jpg"><img src="images/GeneTheJeepster/jeepsterInCentralCity.jpg" alt="Jeepster in Central City" /></a>
+									<a href="images/GeneTheJeepster/jeepsterTrip2025Fall_filmPhotosFromAlexMiller_1.jpg"><img src="images/GeneTheJeepster/jeepsterTrip2025Fall_filmPhotosFromAlexMiller_1.jpg" alt="Jeepster Montana trip 2025" /></a>
+								</div>
+							</article>
+						</div>
+
+						<!-- Project 3: Mallard Jeep -->
+						<div class="col-4 col-12-mobile">
+							<article class="item">
+								<a href="images/mallardJeep/LMYR8099.JPEG" class="image fit">
+									<img src="images/mallardJeep/LMYR8099.JPEG" alt="Mallard 1978 Jeep CJ5" />
+								</a>
+								<header>
+									<h3>Mallard — 1978 Jeep CJ5 Revival</h3>
+									<p>This CJ5 had been rolled, rear-ended, and had a visibly out-of-square frame when the client reached out. After an evaluation and a week of intensive project revival, Tim and the client swapped the best parts of a donor Jeep with the original to create a running, driving CJ5 with a torquey 4.2L straight-6. The client now cruises in the Colorado sun.</p>
+								</header>
+								<div class="project-gallery">
+									<a href="images/mallardJeep/DAZV0906.JPEG"><img src="images/mallardJeep/DAZV0906.JPEG" alt="Mallard Jeep" /></a>
+									<a href="images/mallardJeep/FHXX2778.JPEG"><img src="images/mallardJeep/FHXX2778.JPEG" alt="Mallard Jeep front" /></a>
+								</div>
+							</article>
+						</div>
+
 					</div>
 
 				</div>
 			</section>
 
 			<!-- Contact -->
-			<section id="contact" class="four">
+			<section id="contact" class="five">
 				<div class="container">
 
 					<header>
@@ -278,13 +293,13 @@
 					<ul class="contact-list">
 						<li><span class="icon solid fa-envelope"></span> &nbsp;<a href="mailto:contact@unstuckbytim.com">contact@unstuckbytim.com</a></li>
 						<li><span class="icon solid fa-phone"></span> &nbsp;<a href="tel:+1XXXXXXXXXX">XXX-XXX-XXXX</a></li>
-						<li><span class="icon solid fa-map-marker-alt"></span> &nbsp;Serving Jefferson County & Gilpin County, CO</li>
+						<li><span class="icon solid fa-map-marker-alt"></span> &nbsp;Serving Jefferson, Gilpin & Boulder County, CO</li>
 					</ul>
 
 					<div class="policy-block">
 						<h4>Policies</h4>
 						<p><strong>Refund & Dispute Policy:</strong> All services are quoted and agreed upon before work begins. If you are unsatisfied with completed work, please contact us within 7 days of project completion and we will work with you to resolve the issue. Refunds are evaluated on a case-by-case basis.</p>
-						<p><strong>Cancellation Policy:</strong> Appointments and scheduled work may be cancelled or rescheduled with at least 24 hours notice at no charge. Cancellations with less than 24 hours notice may be subject to a fee equal to the cost of the scheduled time. Rescheduling withing the 24 hour window will be done on a case-by-case basis</p>
+						<p><strong>Cancellation Policy:</strong> Appointments and scheduled work may be cancelled or rescheduled with at least 24 hours notice at no charge. Cancellations with less than 24 hours notice may be subject to a fee equal to the cost of the scheduled time. Rescheduling within the 24 hour window will be done on a case-by-case basis.</p>
 					</div>
 
 				</div>
@@ -296,7 +311,7 @@
 		<div id="footer">
 			<ul class="copyright">
 				<li>&copy; 2025 Moth Mods LLC. All rights reserved.</li>
-				<li>Serving Colorado based in Golden, CO</li> 
+				<li>Serving Colorado — based in Golden, CO</li>
 			</ul>
 		</div>
 
