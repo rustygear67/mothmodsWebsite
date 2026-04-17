@@ -11,8 +11,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/lightbox.min.css" />
 		<style>
-			
+
 			/* Policy section */
 			.policy-block {
 				margin-top: 3em;
@@ -44,7 +45,7 @@
 				color: #ccc;
 			}
 
-			/* Project gallery lightbox-style links */
+			/* Project thumbnail gallery */
 			.project-gallery {
 				display: flex;
 				flex-wrap: wrap;
@@ -138,17 +139,15 @@
 					</header>
 
 					<div class="about-content">
-						<!-- 
+						<!--
 							PLACEHOLDER — write about section and put here
 							A few things worth covering:
 							- Who is Tim / what's your background?
 							- What kinds of projects do you love working on?
 							- What makes Moth Mods different from a typical shop or contractor?
 							- Your philosophy or approach to work
-							
-							"Your about text goes here. Tell people who you are, what drives your work, and why clients trust you to get their stuck projects moving again.]"
 						-->
-						<p><em>My name is Tim, and I'll help get your stuck project moving again. </em></p>
+						<p>My name is Tim, and I'll help get your stuck project moving again.</p>
 					</div>
 
 				</div>
@@ -229,7 +228,10 @@
 						<!-- Project 1: 1939 Olds -->
 						<div class="col-4 col-12-mobile">
 							<article class="item">
-								<a href="images/1939_Olds/39OldsHoodOpen.jpg" class="image fit">
+								<a href="images/1939_Olds/39OldsHoodOpen.jpg"
+								   data-lightbox="olds"
+								   data-title="1939 Oldsmobile — Hood open"
+								   class="image fit">
 									<img src="images/1939_Olds/39OldsHoodOpen.jpg" alt="1939 Oldsmobile Revival" />
 								</a>
 								<header>
@@ -237,8 +239,16 @@
 									<p>This Olds hadn't run since 1978. After a multi-day revival and continued sustaining work, it now runs, drives, and stops. This was the owner's dream since he last drove it to prom in '78 — 46 years of being stuck, finally unstuck.</p>
 								</header>
 								<div class="project-gallery">
-									<a href="images/1939_Olds/39OldsBrakeNoDrum.jpg"><img src="images/1939_Olds/39OldsBrakeNoDrum.jpg" alt="1939 Olds detail" /></a>
-									<a href="images/1939_Olds/39OldsBrakeWithDrum.jpg"><img src="images/1939_Olds/39OldsBrakeWithDrum.jpg" alt="1939 Olds detail" /></a>
+									<a href="images/1939_Olds/39OldsBrakeNoDrum.jpg"
+									   data-lightbox="olds"
+									   data-title="1939 Oldsmobile — Brake without drum">
+										<img src="images/1939_Olds/39OldsBrakeNoDrum.jpg" alt="1939 Olds brake no drum" />
+									</a>
+									<a href="images/1939_Olds/39OldsBrakeWithDrum.jpg"
+									   data-lightbox="olds"
+									   data-title="1939 Oldsmobile — Brake with drum">
+										<img src="images/1939_Olds/39OldsBrakeWithDrum.jpg" alt="1939 Olds brake with drum" />
+									</a>
 								</div>
 							</article>
 						</div>
@@ -246,7 +256,10 @@
 						<!-- Project 2: Gene the Jeepster -->
 						<div class="col-4 col-12-mobile">
 							<article class="item">
-								<a href="images/GeneTheJeepster/jeepsterSunset.jpg" class="image fit">
+								<a href="images/GeneTheJeepster/jeepsterSunset.jpg"
+								   data-lightbox="jeepster"
+								   data-title="Gene the Jeepster — Colorado sunset"
+								   class="image fit">
 									<img src="images/GeneTheJeepster/jeepsterSunset.jpg" alt="Gene the Jeepster at sunset" />
 								</a>
 								<header>
@@ -254,8 +267,16 @@
 									<p>Tim's personal 1967 Jeepster Commando. Years of maintenance and upgrades keep this classic on the road. In fall 2025, Gene successfully drove 2,000+ miles from Colorado to Montana for mountain fly fishing and dirt road cruising — running the original Dauntless 225 oddfire V6 with an HEI upgrade and rebuilt Rochester 2-barrel.</p>
 								</header>
 								<div class="project-gallery">
-									<a href="images/GeneTheJeepster/jeepsterInCentralCity.jpg"><img src="images/GeneTheJeepster/jeepsterInCentralCity.jpg" alt="Jeepster in Central City" /></a>
-									<a href="images/GeneTheJeepster/jeepsterTrip2025Fall_filmPhotosFromAlexMiller_1.jpg"><img src="images/GeneTheJeepster/jeepsterTrip2025Fall_filmPhotosFromAlexMiller_1.jpg" alt="Jeepster Montana trip 2025" /></a>
+									<a href="images/GeneTheJeepster/jeepsterInCentralCity.jpg"
+									   data-lightbox="jeepster"
+									   data-title="Gene the Jeepster — Central City, CO">
+										<img src="images/GeneTheJeepster/jeepsterInCentralCity.jpg" alt="Jeepster in Central City" />
+									</a>
+									<a href="images/GeneTheJeepster/jeepsterTrip2025Fall_filmPhotosFromAlexMiller_1.jpg"
+									   data-lightbox="jeepster"
+									   data-title="Gene the Jeepster — Montana trip, fall 2025">
+										<img src="images/GeneTheJeepster/jeepsterTrip2025Fall_filmPhotosFromAlexMiller_1.jpg" alt="Jeepster Montana trip 2025" />
+									</a>
 								</div>
 							</article>
 						</div>
@@ -263,7 +284,10 @@
 						<!-- Project 3: Mallard Jeep -->
 						<div class="col-4 col-12-mobile">
 							<article class="item">
-								<a href="images/mallardJeep/IMG_7993.jpg" class="image fit">
+								<a href="images/mallardJeep/IMG_7993.jpg"
+								   data-lightbox="mallard"
+								   data-title="Mallard CJ5 — Finished and road ready"
+								   class="image fit">
 									<img src="images/mallardJeep/IMG_7993.jpg" alt="Mallard 1978 Jeep CJ5" />
 								</a>
 								<header>
@@ -271,8 +295,16 @@
 									<p>This CJ5 had been rolled, rear-ended, and had a visibly out-of-square frame when the client reached out. After an evaluation and a week of intensive project revival, Tim and the client swapped the best parts of a donor Jeep with the original to create a running, driving CJ5 with a torquey 4.2L straight-6. The client now cruises in the Colorado sun.</p>
 								</header>
 								<div class="project-gallery">
-									<a href="images/mallardJeep/DAZV0906.JPEG"><img src="images/mallardJeep/DAZV0906.JPEG" alt="Mallard Jeep" /></a>
-									<a href="images/mallardJeep/IMG_7740.jpg"><img src="images/mallardJeep/IMG_7740.jpg" alt="Mallard Jeep front" /></a>
+									<a href="images/mallardJeep/DAZV0906.JPEG"
+									   data-lightbox="mallard"
+									   data-title="Mallard CJ5 — Side view">
+										<img src="images/mallardJeep/DAZV0906.JPEG" alt="Mallard Jeep side" />
+									</a>
+									<a href="images/mallardJeep/IMG_7740.jpg"
+									   data-lightbox="mallard"
+									   data-title="Mallard CJ5 — Work in progress">
+										<img src="images/mallardJeep/IMG_7740.jpg" alt="Mallard Jeep work in progress" />
+									</a>
 								</div>
 							</article>
 						</div>
@@ -325,6 +357,7 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="assets/js/lightbox.min.js"></script>
 
 	</body>
 </html>
